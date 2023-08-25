@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Time Colors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="brand-and-toggler">
+          <a href="index.html" class="navbar-brand">Create.co</a>
+          <button class="navbar-toggler" type="button">
+            <span>
+              <i class="fas fa-bars"></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Gradient Generator</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Color Generator</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="header-btn">
+            <a href="#" class="btn btn-start">Subscribe</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="banner-left">
+          <h1 class="banner-title">
+            Visualize Your
+            <span class="color-effect">Colors</span>
+            <br />
+            On a Real Website
+          </h1>
+          <p class="banner-text">
+            Choosing a color palette for your website? Use the Toolbar below
+            to realize your choices.
+          </p>
+          <div class="hero-btn">
+            <a href="#" class="btn">Getting Started</a>
+            <a href="#" class="btn first">How Does it work?</a>
+          </div>
+          <div class="hero-scroll">
+            <svg width="23" height="33" viewBox="0 0 23 33" fill="none">
+              <rect x="0.767442" y="0.767442" width="20.7209" height="31.4651" rx="10.3605" stroke="var(--primary)"
+                stroke-width="1.53488"></rect>
+              <rect x="9" y="8" width="4" height="8" rx="2" fill="var(--primary)"></rect>
+            </svg>
+            <p class="sub">Scroll to see more sections</p>
+          </div>
+        </div>
+
+        <div class="banner-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="652" height="644" viewBox="0 0 652 644" fill="none"
+            class="mondrian">
+            <rect opacity="0.05" x="1" width="163" height="60" rx="10" fill="var(--primary)"></rect>
+            <rect x="424" width="193" height="60" rx="10" fill="var(--secbuttn)"></rect>
+            <rect x="424" y="68" width="193" height="175" rx="10" fill="var(--secbuttn)"></rect>
+            <rect opacity="0.2" x="424" y="401" width="193" height="79" rx="10" fill="var(--primbuttn)"></rect>
+            <rect x="255" y="626" width="362" height="18" rx="9" fill="var(--secondary)"></rect>
+            <rect x="80" y="579" width="166" height="65" rx="10" fill="var(--secondary)"></rect>
+            <rect x="255" y="579" width="160" height="40" rx="10" fill="var(--primary)"></rect>
+            <rect opacity="0.05" x="255" y="490" width="160" height="80" rx="10" fill="var(--primary)"></rect>
+            <rect opacity="0.05" x="255" y="400" width="160" height="80" rx="10" fill="var(--primary)"></rect>
+            <rect x="80" y="68" width="335" height="324" rx="10" fill="var(--primbuttn)"></rect>
+            <rect x="80" y="401" width="166" height="169" rx="10" fill="var(--primary)"></rect>
+            <rect x="424" y="490" width="193" height="129" rx="10" fill="var(--accent)"></rect>
+            <rect x="626" y="490" width="26" height="154" rx="10" fill="var(--primbuttn)"></rect>
+            <rect x="424" y="252" width="91" height="140" rx="10" fill="var(--secondary)"></rect>
+            <rect x="524" y="252" width="93" height="140" rx="10" fill="var(--secondary)"></rect>
+            <rect opacity="0.05" x="626" width="26" height="480" rx="10" fill="var(--primary)"></rect>
+            <rect x="173" width="242" height="60" rx="10" fill="var(--secondary)"></rect>
+            <rect x="1" y="68" width="70" height="157" rx="10" fill="var(--secondary)"></rect>
+            <rect opacity="0.05" x="1" y="234" width="70" height="259" rx="10" fill="var(--primary)"></rect>
+            <rect x="1" y="502" width="70" height="142" rx="10" fill="var(--secbuttn)"></rect>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="toolbars">
+      <div class="toolbar toolbar-text">
+        <input type="text" value="#000000">
+        <p>Text</p>
+      </div>
+      <div class="toolbar toolbar-background">
+        <input type="text" value="#ffffff">
+        <p>Background</p>
+      </div>
+      <div class="toolbar toolbar-p-btn" style="background-color: var(--primbuttn);">
+        <input type="text" value="#8fb4ff">
+        <p>Primary Button</p>
+      </div>
+      <div class="toolbar toolbar-s-btn">
+        <input type="text" value="#ebf1ff">
+        <p>Seconday Button</p>
+      </div>
+      <div class="toolbar toolbar-accent" style="background-color: var(--accent);">
+        <input type="text" value="#ff8f94">
+        <p>Accent</p>
+      </div>
+      <div class="toolbar toolbar-random" onclick="generateColor()">
+        <abbr title="Random Color Palette Generate">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31" fill="none">
+          <rect x="4.06797" y="2.90574" width="24.4083" height="24.4083" rx="3.84742" stroke="#000000"
+            stroke-width="1.1623"></rect>
+          <circle cx="10.0138" cy="8.85138" r="1.87757" fill="#000000"></circle>
+          <circle cx="22.5306" cy="8.85138" r="1.87757" transform="rotate(90 22.5306 8.85138)" fill="#000000"></circle>
+          <circle cx="16.2718" cy="15.11" r="1.87757" transform="rotate(90 16.2718 15.11)" fill="#000000"></circle>
+          <circle cx="22.5304" cy="21.3685" r="1.87757" fill="#000000"></circle>
+          <circle cx="10.014" cy="21.3685" r="1.87757" transform="rotate(90 10.014 21.3685)" fill="#000000"></circle>
+        </svg>
+      </abbr>
+      </div>
+      <div class="toolbar toolbar-export">
+        <abbr title="Copy Color Palette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="32" viewBox="0 0 33 32" fill="none" onclick="copyColor()">
+          <path
+            d="M17.3248 17.8251V10.2169C17.3248 9.98865 17.2335 9.78186 17.0831 9.63415C16.9328 9.48376 16.726 9.39246 16.5004 9.39246C16.2721 9.39246 16.0653 9.48376 15.9176 9.63415C15.7672 9.78455 15.6759 9.98865 15.6759 10.2169V17.8251L12.7433 15.2657C12.5741 15.118 12.3593 15.0509 12.1498 15.0616C11.9376 15.0751 11.7335 15.1664 11.5805 15.3356C11.4301 15.5048 11.3629 15.7196 11.3737 15.9291C11.3871 16.1386 11.4784 16.3427 11.6476 16.493L15.9552 20.2528C16.1137 20.3925 16.3124 20.4596 16.5084 20.4596C16.7045 20.4596 16.9005 20.3844 17.0509 20.2448L21.3558 16.485C21.5197 16.3346 21.611 16.1332 21.6244 15.9264C21.6378 15.7169 21.568 15.5048 21.4176 15.3356L21.4122 15.3302C21.2619 15.1637 21.0578 15.0751 20.851 15.0616H20.8483C20.6388 15.0509 20.424 15.118 20.2548 15.2684L17.3248 17.8251Z"
+            fill="#0F0F0F"></path>
+          <rect x="4.109" y="2.93511" width="24.6552" height="24.6552" rx="3.88633" stroke="black"
+            stroke-width="1.17406"></rect>
+        </svg>
+      </abbr>
+      </div>
+      <div class="toolbar toolbar-share">
+        <abbr title="Share With Friends">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31" fill="none">
+          <rect x="4.06797" y="2.90574" width="24.4083" height="24.4083" rx="3.84742" stroke="black"
+            stroke-width="1.1623"></rect>
+          <path
+            d="M12 18.5968H11.6229C10.3391 18.5968 9.29834 17.5561 9.29834 16.2722V9.29842C9.29834 8.01458 10.3391 6.97382 11.6229 6.97382H16.2722C17.556 6.97382 18.5968 8.01458 18.5968 9.29842V16.2722C18.5968 17.5561 17.556 18.5968 16.2722 18.5968H16"
+            stroke="black" stroke-width="1.1623"></path>
+          <path
+            d="M20.5 11.623H20.9216C22.2054 11.623 23.2462 12.6638 23.2462 13.9477V20.9215C23.2462 22.2053 22.2054 23.2461 20.9216 23.2461H16.2724C14.9885 23.2461 13.9478 22.2053 13.9478 20.9215V19.7592V13.9477C13.9478 12.6638 14.9885 11.623 16.2724 11.623H16.5"
+            stroke="black" stroke-width="1.1623"></path>
+        </svg>
+      </abbr>
+      </div>
+    </div>
+    <div class="mobile-toolbar">
+      <button class="colors-btn">Colors</button>
+      <button class="generate-btn" onclick="generateColor()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="31" viewBox="0 0 33 31" fill="none">
+          <rect x="4.06797" y="2.90574" width="24.4083" height="24.4083" rx="3.84742" stroke="#000000"
+            stroke-width="1.1623"></rect>
+          <circle cx="10.0138" cy="8.85138" r="1.87757" fill="#000000"></circle>
+          <circle cx="22.5306" cy="8.85138" r="1.87757" transform="rotate(90 22.5306 8.85138)" fill="#000000"></circle>
+          <circle cx="16.2718" cy="15.11" r="1.87757" transform="rotate(90 16.2718 15.11)" fill="#000000"></circle>
+          <circle cx="22.5304" cy="21.3685" r="1.87757" fill="#000000"></circle>
+          <circle cx="10.014" cy="21.3685" r="1.87757" transform="rotate(90 10.014 21.3685)" fill="#000000"></circle>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Table Price Section Start -->
+  <div class="table-heading">
+    <h2>Plans & Pricing</h2>
+    <p>The tool is 100% free! This is just a generic section.</p>
+  </div>
+  <div class="wrapper">
+    <div class="table basic">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">00</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Choose Any Color</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Export all you want</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Unlimited Color Templates</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Lifetime Color Updates</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+    <div class="table premium">
+      <div class="ribbon"><span>Recommend</span></div>
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">01</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Choose Any Color</span>
+          <span class="icon check checkk"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Export all you want</span>
+          <span class="icon check checkk"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Unlimited Color Templates</span>
+          <span class="icon check checkk"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Lifetime Color Updates</span>
+          <span class="icon cross"><i class="fas fa-times"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+    <div class="table ultimate">
+      <div class="price-section">
+        <div class="price-area">
+          <div class="inner-area">
+            <span class="text">$</span>
+            <span class="price">02</span>
+          </div>
+        </div>
+      </div>
+      <div class="package-name"></div>
+      <ul class="features">
+        <li>
+          <span class="list-name">Choose Any Color</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Export all you want</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Unlimited Color Templates</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+        <li>
+          <span class="list-name">Lifetime Color Updates</span>
+          <span class="icon check"><i class="fas fa-check"></i></span>
+        </li>
+      </ul>
+      <div class="btn"><button>Purchase</button></div>
+    </div>
+  </div>
+
+  <!-- Accordian Section Start -->
+
+  <div class="accordian-heading">
+    <h2>FAQ's</h2>
+    <p>Answers to some questions you might have.</p>
+  </div>
+  <div class="accordian-wrapper">
+    <!-- Accordion Heading One -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-1" checked />
+      <label for="tab-1">
+        <span>How many colors should I choose?</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>
+          Normally, 3 colors are absolutely fine (meaning background, text,
+          and one accent color). However, if you want, you can have more.
+          Usually, we don’t add more than 6 colors across a platform. It would
+          just make things too... complicated. Plus, it makes it hard to keep
+          the colors consistent throughout the design.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Two -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-2" />
+      <label for="tab-2">
+        <span>How does the contrast checker work?</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>
+          There are two contrast checkers on the site. One automatically
+          switches the text color for the inputs "Primary Button," "Secondary
+          Button," and "Accent" between the background color and the text
+          color to change them to the most compatible color. <br />The other
+          contrast checker shows the contrast ratio between the selected color
+          and its background/foreground. For the text input, it checks the
+          contrast against the background, and for the rest of the inputs,
+          against the foreground.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Three -->
+    <div class="parent-tab tab-3">
+      <input type="radio" name="tab" id="tab-3" />
+      <label for="tab-3" class="tab-3">
+        <span>Why do some colors have some transparency?</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>
+          This website allows you to choose only opaque colors. However, to
+          make the design more appealing, I’ve made some parts more
+          transparent by adding a bit of opacity to them. Of course, you can
+          use these colors however you want in your own projects.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion Heading Four -->
+    <div class="parent-tab">
+      <input type="radio" name="tab" id="tab-6" />
+      <label for="tab-6">
+        <span>What does the hero image represent?</span>
+        <div class="icon"><i class="fas fa-plus"></i></div>
+      </label>
+      <div class="content">
+        <p>
+          The hero image is inspired by Piet Mondrian's Composition with Large
+          Red Plane, Yellow, Black, Grey and Blue. This composition keeps the
+          ratio of the main colors (red, blue, and yellow) very close to the
+          60-30-10 rule of UI design. This is mainly why I've chosen this
+          composition to visualize the distribution of the colors on the page.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="follow-at-end">
+    <h1>Your <span class="color-effect">Journey</span> Shouldn't End Here.</h1>
+    <p class="subtitle">Follow me on social media to stay tuned on more projects.</p>
+    <a href="https://twitter.com/juxtopposed" target="_blank" class="primary-button" style="color: var(--primary);">Stay
+      Tuned</a>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="top">
+          <div class="title">About Us</div>
+          <p>
+            Choosing a color palette for your website? Use the Toolbar below to realize your choices.
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="title">Contact Us</div>
+          <div class="phone">
+            <a href="#">
+              <i class="fas fa-phone-volume"></i>+923165110428
+            </a>
+          </div>
+          <div class="mail">
+            <a href="#">
+              <i class="fas fa-envelope"></i>mr7759585@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle box">
+        <div class="title">Quick Links</div>
+        <div>
+          <a href="#">Home</a>
+        </div>
+        <div>
+          <a href="#">Services</a>
+        </div>
+        <div>
+          <a href="#">Team</a>
+        </div>
+        <div>
+          <a href="gradientColor.html">Gradient Generator</a>
+        </div>
+        <div>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="right box">
+        <div class="title">Subscribe Us</div>
+        <form action="#">
+          <input type="email" placeholder="enter email address" required>
+          <input type="submit" value="Subscribe">
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright &#169 2023
+        <a href="#">Ramzan</a> All right reserved
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
